@@ -34,10 +34,10 @@ db.once("open", () => {
 });
 
 const pusher = new Pusher({
-  appId: "1083082",
-  key: "1e65db6f76ae6a216b91",
-  secret: "df951bd47327fe0b9ebf",
-  cluster: "ap2",
+  appId: "##############",
+  key: "##############",
+  secret: "##############",
+  cluster: "##############",
   encrypted: true,
 });
 
@@ -48,7 +48,7 @@ app.use(cors({ origin: "http://localhost:3000" }));
 //DB config
 
 const connURL =
-  "mongodb+srv://dinesh__test__1:Fginl4mgU4IJsEAC@cluster0.bcepw.mongodb.net/whatsapp-mern?retryWrites=true&w=majority";
+  "mongodb+srv://<user-name>:Fginl4mgU4IJsEAC@cluster0.bcepw.mongodb.net/<project-name>?retryWrites=true&w=majority";
 
 mongoose.connect(connURL, {
   useNewUrlParser: true,
